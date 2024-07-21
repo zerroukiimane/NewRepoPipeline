@@ -7,21 +7,17 @@ pipeline {
                 git branch:"main",url:"https://github.com/zerroukiimane/NewRepoPipeline.git"
             }
         }
-      stages {
-  stage('Build') { 
+        stage('Build') { 
       
             steps {
-               bat "php index.php"
+               bat " php index.php "
             }
         }
-            stages {
-  stage('Test') { 
+      stage('Test') { 
       
             steps {
-                echo 'Testing...'
+                echo 'testting'
             }
-  }
-            }
+        }
         }
     }
-}
