@@ -20,6 +20,8 @@ pipeline {
             steps {
                 echo 'Testing...'
             }
+  }
+            }
         }
     }
 }
